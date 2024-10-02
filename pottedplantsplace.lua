@@ -12,7 +12,7 @@
 ]]
 
 	p = {
-	title="untitled_page ",
+	title="plant place ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
