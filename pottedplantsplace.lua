@@ -12,8 +12,8 @@
 ]]
 
 	p = {
-	title="pottedplant's place",
-	title="pottedplant's place",
+	title="pottedplant's place ",
+	title="pottedplant's place ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
