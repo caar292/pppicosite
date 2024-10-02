@@ -12,8 +12,7 @@
 ]]
 
 	p = {
-	title="pottedplant's place ",
-	title="pottedplant's place ",
+	title="untitled_page ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
@@ -23,7 +22,7 @@
 	init = function(self,explorer)
 		local page = self
 		add(self.copybuttons, self.g:attach({
-			x=2.0, y=0, width=64, height=64,
+			x=5.0, y=0, width=64, height=64,
 			event = function(self,msg)
 				if(msg.event == "release") then
 					set_clipboard("--[[pod,pod_type=\"image\"]]unpod(\""..page.image5_raw.."\")")
@@ -86,7 +85,7 @@
 			end
 		}))
 		add(self.copybuttons, self.g:attach({
-			x=231.0, y=210.0, width=64, height=64,
+			x=231, y=210, width=64, height=64,
 			event = function(self,msg)
 				if(msg.event == "release") then
 					set_clipboard("--[[pod,pod_type=\"image\"]]unpod(\""..page.image5_raw.."\")")
@@ -95,7 +94,7 @@
 			end
 		}))
 		add(self.copybuttons, self.g:attach({
-			x=117.0, y=268.0, width=64, height=64,
+			x=117, y=268, width=64, height=64,
 			event = function(self,msg)
 				if(msg.event == "release") then
 					set_clipboard("--[[pod,pod_type=\"image\"]]unpod(\""..page.image13_raw.."\")")
@@ -104,7 +103,7 @@
 			end
 		}))
 		add(self.copybuttons, self.g:attach({
-			x=143.0, y=239.0, width=32, height=32,
+			x=143, y=239, width=32, height=32,
 			event = function(self,msg)
 				if(msg.event == "release") then
 					set_clipboard("--[[pod,pod_type=\"image\"]]unpod(\""..page.image14_raw.."\")")
@@ -113,7 +112,7 @@
 			end
 		}))
 		add(self.copybuttons, self.g:attach({
-			x=121.0, y=249.0, width=24, height=24,
+			x=121, y=249, width=24, height=24,
 			event = function(self,msg)
 				if(msg.event == "release") then
 					set_clipboard("--[[pod,pod_type=\"image\"]]unpod(\""..page.image15_raw.."\")")
@@ -127,12 +126,12 @@
 	end,
 	draw = function(self,explorer)
 		cls(19)
-		rectfill(73.0,0,223.0,300,7)
-		print("welcome to my picosite!\n\nI don't really know what\nit's been fun making\nlittle animations and\nplanning out game ideas.\n\nI'm currently making a\ncursed item animation\nbased on a baby toy\ntoaster...\n\nI'll make new pages on\nhere for projects soon!\n ",86.0,52.0,0)
-		print("pottedplant's place ",86.0,18.0,0)
+		rectfill(73,0,223,300,7)
+		print("welcome to my picosite!\n\nI don't really know what\nI'm doing with Picotron,\nit's been fun making\nlittle animations and\nplanning out game ideas.\n\nI'm currently making a\ncursed item animation\nbased on a baby toy\ntoaster...\n\nI'll make new pages on\nhere for projects soon!\n\n ",86.0,53.0,0)
+		print("pottedplant's place ",86,18,0)
 		palt(0)
 		palt(0, true)
-		sspr(self.image5, 0, 0, 64,64,2.0,0,64,64)
+		sspr(self.image5, 0, 0, 64,64,5.0,0,64,64)
 		palt()
 		palt(0)
 		palt(0, true)
@@ -160,19 +159,19 @@
 		palt()
 		palt(0)
 		palt(0, true)
-		sspr(self.image5, 0, 0, 64,64,231.0,210.0,64,64)
+		sspr(self.image5, 0, 0, 64,64,231,210,64,64)
 		palt()
 		palt(0)
 		palt(0, true)
-		sspr(self.image13, 0, 0, 32,16,117.0,268.0,64,16)
+		sspr(self.image13, 0, 0, 32,16,117,268,64,16)
 		palt()
 		palt(0)
 		palt(0, true)
-		sspr(self.image14, 0, 0, 32,32,143.0,239.0,32,32)
+		sspr(self.image14, 0, 0, 32,32,143,239,32,32)
 		palt()
 		palt(0)
 		palt(0, true)
-		sspr(self.image15, 0, 0, 32,32,121.0,249.0,24,24)
+		sspr(self.image15, 0, 0, 32,32,121,249,24,24)
 		palt()
 		
 	end,
